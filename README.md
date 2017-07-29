@@ -1,6 +1,5 @@
 
-
-#Tommaso Garuglieri's portfolio
+# Tommaso Garuglieri's portfolio
 
 ## My dockerized portfolio served by nginx, scalable for the sake of it !
 
