@@ -12,17 +12,17 @@
 
 compose.yaml
 
-'''
+
     portfolio:
-      image: garugaru/portfolio
-      ports:
-        - 80:80
-      deploy:
-        replicas: 2
-        mode: replicated
-        restart_policy:
-          condition: on-failure
-'''
+        image: garugaru/portfolio
+        ports:
+          - 80:80
+        deploy:
+          replicas: 2
+          mode: replicated
+          restart_policy:
+            condition: on-failure
+
 
 Deploy:
 
