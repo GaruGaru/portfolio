@@ -4,7 +4,7 @@ RUN apk --update add nginx
 
 RUN mkdir -p /run/nginx
 
-ADD nginx/garu.pizza /etc/nginx/conf.d/default.conf 
+ADD nginx/site_config /etc/nginx/conf.d/default.conf
 
 ADD . /var/www/html
 
