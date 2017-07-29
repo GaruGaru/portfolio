@@ -6,7 +6,7 @@
 
 ### Run locally
 
-  docker run -p 80:80 garugaru/portfolio
+    docker run -p 80:80 garugaru/portfolio
 
 ### Run on docker swarm
 
