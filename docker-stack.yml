@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+
+  portfolio:
+      image: garugaru/portfolio
+      ports:
+        - 80:80
+      deploy:
+        mode: global
+        restart_policy:
+          condition: on-failure
