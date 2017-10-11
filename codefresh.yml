@@ -9,5 +9,6 @@ steps:
   push_image:
     type: push
     title: Image push
-    candidate: build_image
+    image-name: garugaru/portfolio
+    tag: ${{CF_SHORT_REVISION}}
     fail_fast: false
