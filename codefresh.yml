@@ -4,12 +4,10 @@ steps:
     type: build
     description: Image build
     image-name: garugaru/portfolio
-    tag: ${{$(shell git rev-parse HEAD | cut -c 1-7)}}
+    tag: ${{CF_SHORT_REVISION}}
 
   push_image:
     type: push
-    title: Image push 
-    candidate: ${{build_step_name}} 
-    tag: ${{$(shell git rev-parse HEAD | cut -c 1-7)}}    
-    image_name: garugaru/portfolio
+    title: Image push
+    candidate: build_image
     fail_fast: false
