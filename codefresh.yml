@@ -10,5 +10,6 @@ steps:
     type: push
     title: Image push 
     candidate: ${{build_step_name}} 
+    tag: ${{$(shell git rev-parse HEAD | cut -c 1-7)}}    
     image_name: garugaru/portfolio
     fail_fast: false
