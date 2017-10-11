@@ -2,7 +2,7 @@ version: "3"
 services:
 
   portfolio:
-      image: garugaru/portfolio:master 
+      image: garugaru/portfolio 
       ports:
         - 80:80
       deploy:
