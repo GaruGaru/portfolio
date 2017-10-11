@@ -3,11 +3,11 @@ steps:
   build_image:
     type: build
     description: Image build
-    image-name: garugaru/portfolio
+    image_name: garugaru/portfolio
     tag: ${{CF_SHORT_REVISION}}
 
   push_image:
     type: push
     title: Image push
-    candidate: build_image 
+    candidate: ${{build_image}} 
     fail_fast: false
