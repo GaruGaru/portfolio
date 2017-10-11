@@ -14,7 +14,7 @@ steps:
     fail_fast: false
 
   deploy_to_swarm:
-      image: garugaru/portfolio:${{CF_SHORT_REVISION}} 
+      image: codefresh/remote-docker
       working_directory: ${{main_clone}}
       commands:
         - rdocker ${{RDOCKER_HOST}} docker stack deploy --compose-file docker-stack.yml ${{STACK_NAME}}
