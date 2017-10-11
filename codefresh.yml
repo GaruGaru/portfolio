@@ -1,0 +1,14 @@
+version: '1.0'
+steps:
+  build_image:
+    type: build
+    description: Image build
+    image-name: garugaru/portfolio
+    tag: ${{$(shell git rev-parse HEAD | cut -c 1-7)}}
+
+step_name:
+  type: push
+  title: Image push 
+  candidate: ${{build_step_name}} 
+  image_name: garugaru/portfolio
+  fail_fast: false
