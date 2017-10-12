@@ -18,6 +18,7 @@ steps:
     working_directory: ${{main_clone}}
     commands:
       - rdocker ${{RDOCKER_HOST}} docker stack deploy --compose-file docker-stack.yml ${{STACK_NAME}}
+      - rdocker ${{RDOCKER_HOST}} docker service update --force --image ${{build_image}} ${{STACK_NAME}}_portfolio
     environment:
       - SSH_KEY=${{SSH_KEY}}
     when:
