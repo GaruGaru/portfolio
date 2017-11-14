@@ -1,257 +1,346 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
-    <title>Tommaso Garuglieri Resume</title>
+    <title>Tommaso Garuglieri's Portfolio</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+    />
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/images/profile_face.png" alt="" />
-                <h1 class="name">Tommaso Garuglieri</h1>
-                <h3 class="tagline">Backend Developer<br>DevOps<br>Android Developer</h3>
-            </div><!--//profile-container-->
+<!-- ******HEADER****** -->
+<header class="header">
+    <div class="container">
+        <img class="profile-image img-responsive pull-left" src="assets/images/profile/profile.jpg" alt="Tommaso Garuglieri"/>
+        <div class="profile-content pull-left">
+            <h1 class="name">Tommaso Garuglieri</h1>
+            <h2 class="desc">Backend & Android Developer</h2>
+            <ul class="social list-inline">
+                <li><a href="https://github.com/GaruGaru"><i class="fa fa-github-alt"></i></a></li>
+                <li><a href="https://twitter.com/garullobot"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tommaso-garuglieri-944880105/"><i
+                        class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div><!--//profile-->
+        <a class="btn btn-cta-primary pull-right" href="mailto: garuglieritommaso@gmail.com" target="_blank"><i
+                class="fa fa-paper-plane"></i> Contact Me</a>
+    </div><!--//container-->
+</header><!--//header-->
 
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: garuglieritommaso@gmail.com">garuglieritommaso@gmail.com</a></li>
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel: +393397086350">+393397086350</a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://garu.pizza/" target="_blank">garu.pizza</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/tommaso-garuglieri-944880105/" target="_blank">linkedin</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/GaruGaru/" target="_blank">github.com/GaruGaru</a></li>
-                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/GarulloBot" target="_blank">@GarulloBot</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
+<div class="container sections-wrapper">
+    <div class="row">
+        <div class="primary col-md-8 col-sm-12 col-xs-12">
+            <section class="about section">
+                <div class="section-inner">
+                    <h2 class="heading">About Me</h2>
+                    <div class="content">
 
-                <div class="item">
-                    <h4 class="degree">Computer Science</h4>
-                    <h5 class="meta">IS GobettiVolta</h5>
-                    <div class="time">2010 - 2015</div>
-                </div><!--//item-->
+                        <p>Professional Backend and Android developer, deep knowledge and understanding of full mobile and
+                            software development life cycles, UI, Clean Architecture and Agile methodologies.</p>
 
-            </div><!--//education-container-->
-
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Professional)</span></li>
-                    <li>Italian <span class="lang-desc">(Native)</span></li>
-                </ul>
-            </div><!--//interests-->
-
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Interests</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Guitar</li>
-                    <li>Sport</li>
-                    <li>Tech</li>
-                </ul>
-            </div><!--//interests-->
-
-        </div><!--//sidebar-wrapper-->
-
-        <div class="main-wrapper">
-
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-                <div class="summary">
-                    <p>
-                        Professional Java and Android developer, deep knowledge and understanding of full mobile and software development life cycles, UI, Clean Architecture and Agile methodologies.
-                    </p>
-                </div><!--//summary-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
             </section><!--//section-->
 
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Developer</h3>
-                            <div class="time">2016 - Present</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Instal, Florence</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>In Instal i've worked as an android developer, my work was focused mainly on the proprietary <b>sdk development</b></p>
+            <section class="experience section">
+                <div class="section-inner">
+                    <h2 class="heading">Work Experience</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title">Backend Developer - <span class="place"><a
+                                    href="http://instal.com/">Instal</a></span> <span class="year">(2016 - Present)</span></h3>
 
-                        <p>As Java Developer i've worked with <b>apache storm</b> with <b>hbase</b> in order to archive high performance real data processing</p>
+                            <p>In Instal i've worked as an android developer, my work was focused mainly on the proprietary <b>sdk development</b></p>
 
-                        <p>During my experience in Instal i've gained experience also with the devops stack working with <b>Chef</b> (infrastructure as code), <b>Docker</b> (container engine), <b>Kubernetes</b> for production container orchestration and <b>Sensu</b> for monitoring and alerting system</p>
+                            <p>As Java Developer i've worked with <b>apache storm</b> and <b>google dataflow</b> with <b>hadoop</b> in order to archive high performance real data processing</p>
 
-                    </div><!--//details-->
-                </div><!--//item-->
+                            <p>During my experience in Instal i've gained experience also with the devops stack working with <b>Chef</b> (infrastructure as code), <b>Docker</b> (container engine), <b>Kubernetes</b> for production container orchestration and <b>Sensu</b> for monitoring and alerting system in the <b>GCE</b> environment.</p>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Android Course Teacher</h3>
-                            <div class="time">2016 - 2017</div>
-                        </div><!--//upper-row-->
-                        <div class="company">IS Gobetti Volta</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Teacher in a free android developing course for high school students hosted by IS Gobetti Volta</p>
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="title">Android Course Teacher - <span class="place"><a href="http://www.gobettivolta.gov.it/">IIS Gobetti Volta</a></span>
+                                <span class="year">(2015 - Present)</span></h3>
 
-                    </div><!--//details-->
-                </div><!--//item-->
+                            <p>Teacher in a free android developing course for high school students hosted by IIS Gobetti Volta</p>
 
+                        </div><!--//item-->
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Android Course Teacher</h3>
-                            <div class="time">2015 - 2016</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Multiverso</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Teacher in a free android developing course for high school students hosted by Multiverso firenze</p>
-
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-            </section><!--//section-->
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-                <div class="intro">
-                    <p>Personal projects.</p>
-                </div><!--//intro-->
-
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/gearpump-swarm">Gearpump Swarm</a></span> - <span class="project-tagline">Run and Scale Apache Gearpump on a docker swarm cluster effortlessly</span>
-                </div><!--//item-->      
-
-                <div class="item">
-                    <span class="project-title"><a href="http://github.com/GaruGaru/confy2">Confy2</a></span> - <span class="project-tagline">Easy, fluent, typesafe, container ready java configurations</span>
-                </div><!--//item-->                         
-
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/today-garbage-impruneta">Today Garbage Impruneta</a></span> - <span class="project-tagline">App that show garbage removal schedule for the current day using firebase remote config</span>
-                </div><!--//item-->
-
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/fail2statsd">Fail2Statsd</a></span> - <span class="project-tagline">   Dockerized, lightweight, swarm-ready fail2ban log monitor for statsd written in Golang</span>
-                </div><!--//item-->
-
-                <div class="item">
-                    <span class="project-title"><a href="http://github.com/GaruGaru/BeSiege">BeSiege</a></span> - <span class="project-tagline">Siege inspired http load tester written in Go</span>
-                </div><!--//item-->
-
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/Rssy" target="_blank">Rssy</a></span> -
-                    <span class="project-tagline">Java blazing fast, (kinda ugly), spark-based rss aggregator with redis as cache</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/PioveDomaniAdImpruneta" target="_blank">Piove Domani ad Impruneta?</a></span> - <span class="project-tagline">Minimal and.. very specific weather android app with Dagger2, RxJava2, Retrofit and MVP architecture</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://play.google.com/store/apps/details?id=modularity.howlongago" target="_blank">How long ago</a></span> - <span class="project-tagline">Android application that reminds you how long ago you did something</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://play.google.com/store/apps/details?id=modularity.coderdojoevents" target="_blank">CoderDojo Events</a></span> - <span class="project-tagline">Event brite based android applications that allows users to find nearby coderdojos</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/Rabbify" target="_blank">Rabbify</a></span> - <span class="project-tagline">Java fluent RabbitMQ consumer/publisher api</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/GaruGaru/Sockfy" target="_blank">Sockfy</a></span> - <span class="project-tagline">Fluent, modular, multithreaded server socket library written in java</span>
-                </div><!--//item-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
             </section><!--//section-->
 
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-                <div class="skillset">
-
-                    <div class="item">
-                        <h3 class="level-title">Java</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Android</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Kotlin</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Python</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">GoLang</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="40%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
+            <section class="projects section">
+                <div class="section-inner">
+                    <h2 class="heading">Personal Projects</h2>
+                    <div class="content">
 
 
-                </div>
+                        <div class="item">
+                            <h3 class="title"><a href="#">Portfolio</a>
+                                <span class="label label-theme">Open Source</span>
+                            </h3>
+                            <p class="summary">This portfolio, served by nginx< running on a 4 nodes <b>docker swarm</b> cluster hosted on <b>scaleway</b></p>
+                            <p><a class="more-link"
+                                  href="https://github.com/GaruGaru/Confy2"
+                                  target="_blank"><i class="fa fa-external-link"></i>View on GitHub</a></p>
+                        </div><!--//item-->
 
-            </section><!--//skills-section-->
+                        <div class="item">
+                            <h3 class="title"><a href="#">Confy</a>
+                                <span class="label label-theme">Open Source</span>
+                                <span class="label label-lang-java">Java</span>
+                            </h3>
+                            <p class="summary">Easy, fluent, typesafe, container ready java configurations</p>
+                            <p><a class="more-link"
+                                  href="https://github.com/GaruGaru/Confy2"
+                                  target="_blank"><i class="fa fa-external-link"></i>View on GitHub</a></p>
+                        </div><!--//item-->
 
-        </div><!--//main-body-->
-    </div>
+                        <div class="item">
+                            <h3 class="title"><a href="#">BeSiege</a>
+                                <span class="label label-theme">Open Source</span>
+                                <span class="label label-lang-go">Go</span>
+                            </h3>
+                            <p class="summary">Siege inspired http load tester written in Go</p>
+                            <p><a class="more-link"
+                                  href="http://github.com/GaruGaru/BeSiege"
+                                  target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+                        </div><!--//item-->
 
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers - 1.1</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+                        <div class="item">
+                            <h3 class="title"><a href="#">Coderdojo Events Backend</a>
+                                <span class="label label-theme">Open Source</span>
+                                <span class="label label-lang-kotlin">Kotlin</span>
+                            </h3>
+                            <p class="summary">Fast, parallel, container ready aggregator for coderdojo events app written in Kotlin</p>
+                            <p><a class="more-link"
+                                  href="https://github.com/GaruGaru/coderdojo-app-backend"
+                                  target="_blank"><i class="fa fa-external-link"></i>View on GitHub</a></p>
+                        </div><!--//item-->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+                        <div class="item">
+                            <h3 class="title"><a href="#">Fail2Statsd</a>
+                                <span class="label label-theme">Open Source</span>
+                                <span class="label label-lang-go">Go</span>
+                            </h3>
+                            <p class="summary">Dockerized, lightweight, swarm-ready fail2ban log monitor for statsd written in Golang</p>
+                            <p><a class="more-link"
+                                  href="http://github.com/GaruGaru/BeSiege"
+                                  target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+                        </div><!--//item-->
+
+                        <div class="item">
+                            <h3 class="title"><a href="#">Piove domani ad Impruneta?</a>
+                                <span class="label label-theme">Open Source</span>
+                                <span class="label label-lang-java">Java</span>
+                                <span class="label label-lang-android">Android</span>
+                            </h3>
+                            <p class="summary">Minimal and.. very specific weather android app with Dagger2, RxJava2, Retrofit and MVP architecture</p>
+                            <p><a class="more-link"
+                                  href="https://github.com/GaruGaru/PioveDomaniAdImpruneta"
+                                  target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+                        </div><!--//item-->
+
+                        <a class="btn btn-cta-secondary" href="https://github.com/GaruGaru/">More on GitHub <i class="fa fa-chevron-right"></i></a>
+
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+
+        </div><!--//primary-->
+        <div class="secondary col-md-4 col-sm-12 col-xs-12">
+            <aside class="info aside section">
+                <div class="section-inner">
+                    <h2 class="heading sr-only">Basic Information</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Florence, IT</li>
+                            <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a
+                                    href="mailto: garuglieritommaso@gmail.com">garuglieritommaso@gmail.com</a></li>
+                            <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a
+                                    href="http://garu.pizza/">http://garu.pizza/</a></li>
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//aside-->
+
+            <aside class="skills aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Skills</h2>
+                    <div class="content">
+                        <p class="intro">
+                        <div class="skillset">
+
+                            <div class="item">
+                                <h3 class="level-title">Android<span class="level-label" data-toggle="tooltip"
+                                                                     data-placement="left" data-animation="true"
+                                                                     title="You can use the tooltip to add more info...">Expert</span>
+                                </h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="96%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Java<span class="level-label">Expert</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="96%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Kotlin<span class="level-label">Proficient</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="75%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">GoLang<span class="level-label">Beginner</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="55%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <!--    <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p>  -->
+                        </div>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+
+            <aside class="education aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Education</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title"><i class="fa fa-graduation-cap"></i>Computer Science
+                            </h3>
+                            <h4 class="university"> IIS Gobetti Volta <span class="year">(2010-2015)</span></h4>
+                        </div><!--//item-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+            <aside class="languages aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Languages</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li class="item">
+                                <span class="title"><strong>Italian:</strong></span>
+                                <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> </span>
+                            </li><!--//item-->
+                            <li class="item">
+                                <span class="title"><strong>English:</strong></span>
+                                <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star-half"></i></span>
+                            </li><!--//item-->
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+
+            <aside class="list music aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Favourite coding music</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                            <li><i class="fa fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
+                            <li><i class="fa fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                            <li><i class="fa fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+            <aside class="list conferences aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Conferences</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+
+                            <li><i class="fa fa-calendar"></i>
+                                <a href="http://uk.droidcon.com/" target="_blank">Droidon UK </a> (London)
+                            </li>
+
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+        </div><!--//secondary-->
+    </div><!--//row-->
+</div><!--//masonry-->
+
+<!-- ******FOOTER****** -->
+<footer class="footer">
+    <div class="container text-center">
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+        <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
+                                                                                 target="_blank">Xiaoying Riley</a> for
+            developers
+        </small>
+    </div><!--//container-->
+</footer><!--//footer-->
+
+<!-- Javascript -->
+<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+<!-- github calendar plugin -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+<script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+<!-- github activity plugin -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-</html>
+</html> 
+
