@@ -3,6 +3,8 @@ services:
 
   portfolio:
       image: garugaru/portfolio
+      networks:
+        - proxy
       deploy:
         labels:
           - traefik.docker.network=proxy
