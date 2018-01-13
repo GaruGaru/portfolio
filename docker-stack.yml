@@ -1,4 +1,4 @@
-version: "3"
+version: "3.3"
 services:
 
   portfolio:
@@ -6,9 +6,17 @@ services:
       ports:
         - 80:80
       deploy:
+        labels:
+          - traefik.docker.network=proxy
+          - traefik.port=80
+          - traefik.frontend.rule=Host:garu.pizza
+        mode: replicated
         replicas: 2
-        update_config:
-          parallelism: 1
-          delay: 5s
         restart_policy:
           condition: on-failure
+
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
