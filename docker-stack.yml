@@ -2,9 +2,7 @@ version: "3"
 services:
 
   portfolio:
-      image: garugaru/portfolio 
-      ports:
-        - 80:80
+      image: garugaru/portfolio
       deploy:
         labels:
           - traefik.docker.network=proxy
