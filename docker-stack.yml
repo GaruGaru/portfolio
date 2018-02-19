@@ -5,6 +5,8 @@ services:
       image: garugaru/portfolio 
       ports:
         - 80:80
+      volumes:
+        - /swarm/file_store_r2/certs/garu.pizza:/etc/ssl/certs
       deploy:
         replicas: 2
         update_config:
