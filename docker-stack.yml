@@ -2,15 +2,23 @@ version: "3"
 services:
 
   portfolio:
-      image: garugaru/portfolio 
-      ports:
-        - 80:80
+      image: garugaru/portfolio
+      networks:
+        - proxy
       volumes:
         - /swarm/file_store_r2/certs/garu.pizza:/etc/ssl/certs
       deploy:
+        labels:
+          - traefik.docker.network=proxy
+          - traefik.port=80
+          - traefik.frontend.rule=Host:garu.pizza
+        mode: replicated
         replicas: 2
-        update_config:
-          parallelism: 1
-          delay: 5s
         restart_policy:
           condition: on-failure
+
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
