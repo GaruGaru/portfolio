@@ -1,6 +1,7 @@
 FROM alpine:3.5
 
 RUN apk --update add nginx
+RUN apk add ca-certificates && rm -rf /var/cache/apk/* && update-ca-certificates
 
 RUN mkdir -p /run/nginx
 
