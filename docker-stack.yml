@@ -5,8 +5,6 @@ services:
       image: garugaru/portfolio 
       networks:
         - proxy
-      volumes:
-        - /swarm/file_store_r2/certs/garu.pizza:/etc/ssl/certs
       deploy:
         labels:
           - traefik.docker.network=proxy
