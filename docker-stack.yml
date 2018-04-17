@@ -9,7 +9,7 @@ services:
         labels:
           - traefik.docker.network=proxy
           - traefik.port=80
-          - traefik.frontend.rule=Host:garu.pizza
+          - traefik.frontend.rule=Host:garu.io
         mode: replicated
         replicas: 1
         restart_policy:

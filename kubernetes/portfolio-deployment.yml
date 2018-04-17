@@ -1,0 +1,41 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: garu-portfolio
+  namespace: personal
+spec:
+  replicas: 2
+  revisionHistoryLimit: 0
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
+  template:
+    metadata:
+      labels:
+        app: garu-portfolio
+        tier: frontend
+    spec:
+      containers:
+        - name: garu-portfolio-nginx
+          image: garugaru/portfolio:latest
+          imagePullPolicy: Always
+          ports:
+            - name: nginx
+              containerPort: 81
+          resources:
+            requests:
+              memory: "8Mi"
+              cpu: "10m"
+          readinessProbe:
+            httpGet:
+              path: /
+              port: nginx
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - /usr/sbin/nginx
+                  - -s
+                  - quit

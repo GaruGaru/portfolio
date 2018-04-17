@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: global-ingress
+spec:
+  rules:
+  - host: garu.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: garu-portfolio-service
+          servicePort: 80
