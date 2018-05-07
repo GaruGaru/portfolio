@@ -12,7 +12,7 @@ steps:
     candidate: ${{build_image}}
     tags: 
       - ${{CF_SHORT_REVISION}} 
-      - latest 
+      -   latest 
     fail_fast: false
 
   deploy_to_swarm:
@@ -35,7 +35,7 @@ steps:
     cluster:  garu-io-cluster
     namespace: personal
     service: garu-portfolio-service
-    timeout: 150
+    timeout: '150'
     candidate:
       image: ${{build_step}}
       registry: dockerhub
