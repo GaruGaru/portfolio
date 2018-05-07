@@ -37,7 +37,7 @@ steps:
     service: garu-portfolio-service
     timeout: '150'
     candidate:
-      image: ${{build_step}}
+      image: ${{build_image}}
       registry: dockerhub
 
     when:
