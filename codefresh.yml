@@ -4,13 +4,17 @@ steps:
     type: build
     description: Image build
     image_name: garugaru/portfolio
-    tag: ${{CF_SHORT_REVISION}}
+    tags: 
+      - ${{CF_SHORT_REVISION}} 
+      - latest 
 
   push_image:
     type: push
     title: Image push
     candidate: ${{build_image}}
-    tag: ${{CF_SHORT_REVISION}} 
+    tags: 
+      - ${{CF_SHORT_REVISION}} 
+      - latest 
     fail_fast: false
 
   deploy_to_swarm:
@@ -25,3 +29,22 @@ steps:
       branch:
         only:
           - master
+
+  deploy_to_k8:
+    title: deploying to cluster
+    type: deploy
+    kind: kubernetes 
+    cluster:  garu-io-cluster
+    namespace: personal
+    service: garu-portfolio-service
+    timeout: 150
+    candidate:
+      image: ${{build_step}}
+      registry: dockerhub
+
+    when:
+      branch:
+        only:
+          - master
+
+    
