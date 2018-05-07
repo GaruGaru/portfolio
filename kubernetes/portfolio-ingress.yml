@@ -14,4 +14,4 @@ spec:
       - path: /
         backend:
           serviceName: garu-portfolio-service
-          servicePort: http
+          servicePort: 80
