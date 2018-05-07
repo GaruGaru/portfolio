@@ -4,9 +4,7 @@ steps:
     type: build
     description: Image build
     image_name: garugaru/portfolio
-    tags: 
-      - ${{CF_SHORT_REVISION}} 
-      - latest 
+    tag:  ${{CF_SHORT_REVISION}} 
 
   push_image:
     type: push
