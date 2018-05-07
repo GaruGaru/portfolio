@@ -23,11 +23,14 @@ spec:
           imagePullPolicy: Always
           ports:
             - name: nginx
-              containerPort: 81
+              containerPort: 80
           resources:
             requests:
               memory: "8Mi"
               cpu: "10m"
+            limits:
+              memory: "100Mi"
+              cpu: "150m"
           readinessProbe:
             httpGet:
               path: /
