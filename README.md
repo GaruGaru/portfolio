@@ -5,6 +5,6 @@
 
 ## My dockerized portfolio served by nginx, scalable for the sake of it !
 
-### [Live](http://garu.pizza/)
+### [Live](https://garu.io/)
 
 ![Preview](/assets/screenshots/preview.png)
