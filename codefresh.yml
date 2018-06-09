@@ -28,21 +28,21 @@ steps:
         only:
           - master
 
-  deploy_to_k8:
-    title: deploying to cluster
-    type: deploy
-    kind: kubernetes 
-    cluster:  garu-io-cluster
-    namespace: personal
-    service: garu-portfolio-service
-    timeout: '150'
-    candidate:
-      image: ${{build_image}}
-      registry: dockerhub
+  #deploy_to_k8:
+  #  title: deploying to cluster
+  #  type: deploy
+  #  kind: kubernetes 
+  #  cluster:  garu-io-cluster
+  #  namespace: personal
+  #  service: garu-portfolio-service
+  #  timeout: '150'
+  #  candidate:
+  #    image: ${{build_image}}
+  #    registry: dockerhub
 
-    when:
-      branch:
-        only:
-          - master
+  #  when:
+  #    branch:
+  #      only:
+  #        - master
 
     
