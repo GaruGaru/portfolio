@@ -114,6 +114,33 @@ a.btn-cta-secondary:hover,
     font-size: 12px;
 }
 
+.tools-default {
+  background: #3b66aa;
+  font-size: 12px;
+}
+
+.tools-database {
+  background: #33aa55;
+  font-size: 12px;
+}
+
+
+.tools-bigdata {
+  background: #aa555c;
+  font-size: 12px;
+}
+
+.tools-docker {
+  background: #5368aa;
+  font-size: 12px;
+}
+
+.tools-devops {
+  background: #2198aa;
+  font-size: 12px;
+}
+
+
 a.dotted-link {
   border-bottom: 1px dotted #778492;
   color: #778492;
