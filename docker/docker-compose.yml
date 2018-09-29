@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  portfolio:
+    image: garugaru/portfolio
+    build: ../
+    ports:
+      - 80:80
+    volumes:
+      - "../:/var/www/html"
