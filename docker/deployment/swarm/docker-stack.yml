@@ -4,10 +4,10 @@ services:
   portfolio:
       image: garugaru/portfolio 
       networks:
-        - proxy
+        - traefik
       deploy:
         labels:
-          - traefik.docker.network=proxy
+          - traefik.docker.network=traefik
           - traefik.port=80
           - traefik.frontend.rule=Host:garu.io
         mode: replicated
@@ -16,7 +16,7 @@ services:
           condition: on-failure
 
 networks:
-  proxy:
+  traefik:
     external: true
   internal:
     external: false
